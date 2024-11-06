@@ -43,12 +43,14 @@ def sort_temp(input_list):
     input_list.sort()
 
 def calc_median_tempterature(input_list): 
-    print("calc_memdian_temperature")
+    print("calc_median_temperature")
     count = len(input_list)
     if count % 2 is 1:
         median = input_list[(count -1)//2]#// - forcing the output to be integers
     else: 
         median = (input_list[count//2] + input_list[(count//2)-1])/2
+
+    return median
     print("Median: ", median)
 
 def main():
