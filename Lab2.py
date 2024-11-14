@@ -19,7 +19,7 @@ def get_user_input():
     
     for x in split_list: 
         float_number = float(x) # will give a float number
-        floatlist.append(float_number)
+        floatlist.append(float_number) #put in a new element inside the list 
     print("Float List: " , floatlist)
     return floatlist
 
@@ -49,9 +49,9 @@ def calc_median_tempterature(input_list):
         median = input_list[(count -1)//2]#// - forcing the output to be integers
     else: 
         median = (input_list[count//2] + input_list[(count//2)-1])/2
-
+    print("Median" + median)
     return median
-    print("Median: ", median)
+
 
 def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
